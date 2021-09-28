@@ -4,7 +4,7 @@
     <h3>Textbox Length/Message Exercise</h3>
     <input id='input'
            v-model='text'
-           v-on:keyup='keyUp(text)'
+           v-on:input='keyUp(text)'
            v-bind:class='[textTooLong? tooLongClass : textOKClass]'
            type='text'
            placeholder='Enter some text'/>
